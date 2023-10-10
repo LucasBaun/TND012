@@ -1,0 +1,10 @@
+^C:\USERS\LINUS\ONEDRIVE\SKRIVBORD\TND012\LABB\LAB3\LAB3\CODE\CMAKEFILES\15A972E7E4BA5B918F870E66C54AEE6E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Linus/OneDrive/Skrivbord/TND012/Labb/lab3/lab3/code -BC:/Users/Linus/OneDrive/Skrivbord/TND012/Labb/lab3/lab3/code --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Linus/OneDrive/Skrivbord/TND012/Labb/lab3/lab3/code/TND012-Lab-3.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
